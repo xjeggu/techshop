@@ -19,4 +19,4 @@ This is a school project for creating a TechShop website. The website is designe
 
 ## Link to Website
 
-[Click here to view the TechShop website](#)
+[Click here to view the TechShop website](https://techshop.xjeggu.de/html)
