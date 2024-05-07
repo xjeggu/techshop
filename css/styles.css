@@ -8,6 +8,14 @@
     "ad1 main-content main-content main-content main-content ad2";
 }
 
+.navbar {
+  -webkit-box-shadow: 15px -8px 20px 6xpx #1c1c1c;
+  -moz-box-shadow: 15px -8px 20px 6px #1c1c1c;
+  box-shadow: 15px -8px 20px 6px #1c1c1c;
+  border-radius: 20px;
+
+}
+
 #banner-image {
   grid-area: header;
   max-width: 100%;
