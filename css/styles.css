@@ -107,24 +107,24 @@
 @media only screen and (min-width: 992px) {
 .navbar-split {
   position: absolute;
-  top: -15px;
+  top: -36%;
   left: 51%;
   transform: translateX(-50%);
-  width: 20px;
+  width: 0%;
   height: 100%;
   background-color: transparent;
   clip-path: polygon(10% 11%, 11% 55%, 71% 55%, 73% 87%, 83% 87%, 83% 42%, 23% 42%, 20% 11%);
   content: '';
   background-color: white; 
   width: 10%;
-  height: 180%;
+  height: 180%; 
   clip-path: polygon(10% 11%, 11% 55%, 71% 55%, 73% 87%, 83% 87%, 83% 42%, 23% 42%, 20% 11%);
 }
 
 .navbar-split-blue {
   position: absolute;
-  top: -43.5px;
-  left: 45.3%;
+  top: -103.8%;
+  left: 45.5%;
   width: 12%;
   height: 250%;
   content: '';
@@ -134,10 +134,10 @@
 
 .navbar-split-light-blue {
   position: absolute;
-  top: -77px;
+  top: -192.059%;
   left: 47.3%;
   width: 12%;
-  height: 250%;
+  height: 260%;
   content: '';
   clip-path: polygon(6% 67%, 66% 66%, 66% 89%, 6% 89%);
   background-color: #3399ff;
