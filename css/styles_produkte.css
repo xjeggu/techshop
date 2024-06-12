@@ -26,7 +26,6 @@
   background-image: -webkit-linear-gradient(right, #333399 50%, #3399ff 50%);
   background-image: -ms-linear-gradient(right, #333399 50%, #3399ff 50%);
   background-image: linear-gradient(to right, #333399 50%, #3399ff 50%);
-
 }
 
 .nav-link {
@@ -64,12 +63,14 @@
 
 .product1 {
   grid-area: product1;
-  
 }
 
 .product2 {
   grid-area: product2;
-  
+}
+
+.product3 {
+  grid-area: product3;
 }
 
 .product {
@@ -80,16 +81,12 @@
   margin-right: 30px;
 }
 
-
-
-
-
-
-
 #main-nav {
   position: relative;
   top: -30px;
   grid-area: nav;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .nav-item {
@@ -117,93 +114,93 @@
   object-fit: cover;
 }
 
-
 @media only screen and (min-width: 992px) {
-.navbar-split {
-  position: absolute;
-  top: -36%;
-  left: 51%;
-  transform: translateX(-50%);
-  width: 0%;
-  height: 100%;
-  background-color: transparent;
-  clip-path: polygon(10% 11%, 11% 55%, 71% 55%, 73% 87%, 83% 87%, 83% 42%, 23% 42%, 20% 11%);
-  content: '';
-  background-color: white; 
-  width: 10%;
-  height: 180%; 
-  clip-path: polygon(10% 11%, 11% 55%, 71% 55%, 73% 87%, 83% 87%, 83% 42%, 23% 42%, 20% 11%);
-}
-
-.navbar-split-blue {
-  position: absolute;
-  top: -103.8%;
-  left: 45.5%;
-  width: 12%;
-  height: 250%;
-  content: '';
-  clip-path: polygon(6% 67%, 66% 66%, 66% 89%, 6% 89%);
-  background-color: #333399;
-}
-
-.navbar-split-light-blue {
-  position: absolute;
-  top: -192.059%;
-  left: 47.3%;
-  width: 12%;
-  height: 260%;
-  content: '';
-  clip-path: polygon(6% 67%, 66% 66%, 66% 89%, 6% 89%);
-  background-color: #3399ff;
-}
-
-
-.navbar-collapse {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: 100%;
-}
-
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around;
-}
-}
-
-
-@media only screen and (max-width: 992px) {
-.navbar-nav.ms-auto {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around;
-  top: 45px;
-  left:75px;
-}
-
-#ad1-div, #ad2-div {
-  display: none;
-}
-
-#grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: 
-    "header"
-    "nav"
-    "procuct1"
-    "procuct2"
-    "procuct3";
-}
+  .navbar-split {
+    position: absolute;
+    top: -36%;
+    left: 51%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 100%;
+    background-color: transparent;
+    clip-path: polygon(10% 11%, 11% 55%, 71% 55%, 73% 87%, 83% 87%, 83% 42%, 23% 42%, 20% 11%);
+    content: '';
+    background-color: white;
+    width: 10%;
+    height: 180%;
+    clip-path: polygon(10% 11%, 11% 55%, 71% 55%, 73% 87%, 83% 87%, 83% 42%, 23% 42%, 20% 11%);
   }
 
+  .navbar-split-blue {
+    position: absolute;
+    top: -103.8%;
+    left: 45.5%;
+    width: 12%;
+    height: 250%;
+    content: '';
+    clip-path: polygon(6% 67%, 66% 66%, 66% 89%, 6% 89%);
+    background-color: #333399;
+  }
 
-  
+  .navbar-split-light-blue {
+    position: absolute;
+    top: -192.059%;
+    left: 47.3%;
+    width: 12%;
+    height: 260%;
+    content: '';
+    clip-path: polygon(6% 67%, 66% 66%, 66% 89%, 6% 89%);
+    background-color: #3399ff;
+  }
 
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
 
-  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav.ms-auto {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    top: 45px;
+    left: 75px;
+  }
+
+  #ad1-div, #ad2-div {
+    display: none;
+  }
+
+  #grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "product1"
+      "product2"
+      "product3";
+    justify-items: center;
+  }
+
+  .product {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
