@@ -98,6 +98,12 @@
   filter: invert(100%);
 }
 
+#cart-icon:hover {
+  max-height: 3vh;
+  transition: filter 0.3s ease-in-out;
+  filter: invert(70%);
+}
+
 #ad1-div {
   grid-area: ad1;
   overflow: hidden;

@@ -5,7 +5,7 @@
   grid-template-areas: 
     "header header header header header header"
     "nav nav nav nav nav nav"
-    "ad1 main-content main-content main-content main-content ad2";
+    "ad1 main-content main-content fields fields ad2";
 }
 
 .navbar {
@@ -111,6 +111,11 @@
   background-color: #3399ff;
   border-radius: 3px;
   border-color: #000000;
+}
+
+#fields {
+  margin-top: 16%;
+  grid-area: fields;
 }
 
 #ad1-div {

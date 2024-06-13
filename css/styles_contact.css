@@ -5,7 +5,7 @@
   grid-template-areas: 
     "header header header header header header"
     "nav nav nav nav nav nav"
-    "ad1 main-content main-content main-content main-content ad2";
+    "ad1 main-content main-content map map ad2";
 }
 
 .navbar {
@@ -73,6 +73,10 @@
   margin-right: 30px;
 }
 
+#map {
+  grid-area: map;
+}
+
 
 #main-nav {
   position: relative;
@@ -93,24 +97,6 @@
   max-height: 3vh;
   transition: filter 0.3s ease-in-out;
   filter: invert(70%);
-}
-
-#loginf {
-  background-color: #3399ff;
-  border-radius: 3px;
-  border-color: #000000;
-}
-
-#loginp {
-  background-color: #3399ff;
-  border-radius: 3px;
-  border-color: #000000;
-}
-
-#loginb {
-  background-color: #3399ff;
-  border-radius: 3px;
-  border-color: #000000;
 }
 
 #ad1-div {
